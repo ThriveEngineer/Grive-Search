@@ -1,6 +1,6 @@
 # Grive Search
 ![Logo](https://framerusercontent.com/images/i8onoJvOVDOaAjqwQLfOOcRcos.png)
-Grive search is a Search Engine that uses the Brave API. Download the [APK]()
+Grive search is a Search Engine that uses the Brave API. Download the [APK](https://github.com/ThriveEngineer/Grive-Search/releases/download/v1.0.0/app-release.apk)
 
 ## Features
 - Searching
