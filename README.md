@@ -26,4 +26,4 @@ flutter run
 
 
 ## Other stuff
-### [Support me💖](https://buymeacoffee.com/nepogfx)
+### [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L4L115XHM6)
