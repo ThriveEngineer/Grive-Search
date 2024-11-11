@@ -1,12 +1,13 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:grive/api_key.dart';
 import 'package:grive/components/search_result.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'web_view_screen.dart';
+import 'package:posthog_flutter/posthog_flutter.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({Key? key}) : super(key: key);
@@ -23,6 +24,10 @@ class _SearchScreenState extends State<SearchScreen> {
   Future<void> _performSearch(String query) async {
     if (query.isEmpty) return;
 
+    await Posthog().screen(
+      screenName: 'Example Screen',
+    );
+
     setState(() {
       _isLoading = true;
     });
@@ -32,7 +37,7 @@ class _SearchScreenState extends State<SearchScreen> {
         Uri.parse('https://api.search.brave.com/res/v1/web/search?q=${Uri.encodeComponent(query)}'),
         headers: {
           'Accept': 'application/json',
-          'X-Subscription-Token': "BSA-vEql9hGwvX-OufhXQjlkYkRgj8a",
+          'X-Subscription-Token': braveApiKey,
         },
       );
 

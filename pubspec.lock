@@ -248,6 +248,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.8"
+  posthog_flutter:
+    dependency: "direct main"
+    description:
+      name: posthog_flutter
+      sha256: fa766d3768e97bfe69faea688ad4a282e8c0a2fd3d877a5376df618a5a13c9e8
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.6.0"
   sky_engine:
     dependency: transitive
     description: flutter
